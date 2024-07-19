@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f0f8ff;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.Formularios {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    overflow: auto;
+}
+
+.Formularios h1 {
+    
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.Formularios input[type="text"],
+.Formularios input[type="number"],
+.Formularios input[type="file"],
+.Formularios input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Formularios input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Formularios input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.BusquedaMuestra {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.BusquedaMuestra .arriba,
+.BusquedaMuestra .abajo {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: auto;
+    height: 48%;
+}
+
+.BusquedaMuestra h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.BusquedaMuestra table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.BusquedaMuestra table, 
+.BusquedaMuestra th, 
+.BusquedaMuestra td {
+    border: 1px solid #ccc;
+}
+
+.BusquedaMuestra th, 
+.BusquedaMuestra td {
+    padding: 10px;
+    text-align: left;
+}
+
+.BusquedaMuestra th {
+    background-color: #f2f2f2;
+}
+
+.BusquedaMuestra img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .Formularios, 
+    .BusquedaMuestra {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .BusquedaMuestra {
+        padding-left: 0;
+    }
+
+    .BusquedaMuestra .arriba,
+    .BusquedaMuestra .abajo {
+        width: 100%;
+    }
+}
